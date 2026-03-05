@@ -1,8 +1,8 @@
-# Project Bifrost 🌈
+# Project Draugr 💀
 
 Unified Linux Management & Security Audit tool built for **Arch Linux (CachyOS)** and **Debian (Trixie)** systems.
 
-Inspired by Paul Asadoorian's `Linux_Hacks`, Bifrost provides a modular, high-performance way to maintain and secure your environments with a single command.
+Inspired by Paul Asadoorian's `Linux_Hacks`, Draugr provides a modular, high-performance way to maintain and secure your environments with a single command.
 
 ## 🏛️ Features
 
@@ -16,15 +16,15 @@ Inspired by Paul Asadoorian's `Linux_Hacks`, Bifrost provides a modular, high-pe
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/bhackerb/bifrost.git
-    cd bifrost
-    chmod +x bifrost.sh
+    git clone https://github.com/bhackerb/draugr.git
+    cd draugr
+    chmod +x draugr.sh
     ```
 
 2.  **Usage:**
     ```bash
-    ./bifrost.sh all    # Run Sync, Clean, and Audit in sequence
-    ./bifrost.sh harden # Apply security-focused kernel parameters
+    ./draugr.sh all    # Run Sync, Clean, and Audit in sequence
+    ./draugr.sh harden # Apply security-focused kernel parameters
     ```
 
 ## 📂 Architecture

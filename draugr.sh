@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Project "Bifrost" - Unified Linux Management & Security Audit
+# Project "Draugr" - Unified Linux Management & Security Audit
 # Inspired by Paul Asadoorian's Linux Hacks
 # Built for Debian (Trixie) & Arch (CachyOS)
 
@@ -16,7 +16,7 @@ elif [ -f /etc/debian_version ]; then
     DISTRO="debian"
     PKG_MGR="apt"
 else
-    echo "ERROR: Unsupported distro. Bifrost only supports Arch and Debian."
+    echo "ERROR: Unsupported distro. Draugr only supports Arch and Debian."
     exit 1
 fi
 
@@ -40,9 +40,9 @@ load_modules
 
 # --- Banner ---
 show_banner() {
-    echo -e "${CYAN}========================================${NC}"
-    echo -e "${CYAN}         PROJECT BIFROST v2.0           ${NC}"
-    echo -e "${CYAN}========================================${NC}"
+    echo -e "${RED}========================================${NC}"
+    echo -e "${RED}         PROJECT DRAUGR v2.0            ${NC}"
+    echo -e "${RED}========================================${NC}"
     echo -e "Detected Distro: ${GREEN}${DISTRO}${NC} (via ${PKG_MGR})"
     echo ""
 }
@@ -81,7 +81,7 @@ case "$1" in
         ;;
     *)
         show_banner
-        echo "Usage: bifrost {sync|audit|clean|harden|vibe|all}"
+        echo "Usage: draugr {sync|audit|clean|harden|vibe|all}"
         echo ""
         echo "Commands:"
         echo "  sync    - Update system packages, AUR, flatpaks, and firmware."
